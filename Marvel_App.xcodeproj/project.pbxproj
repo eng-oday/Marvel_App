@@ -9,14 +9,29 @@
 /* Begin PBXBuildFile section */
 		CE99B9A12B547B7E00527175 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99B9A02B547B7E00527175 /* AppDelegate.swift */; };
 		CE99B9A32B547B7E00527175 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99B9A22B547B7E00527175 /* SceneDelegate.swift */; };
-		CE99B9A52B547B7E00527175 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99B9A42B547B7E00527175 /* ViewController.swift */; };
-		CE99B9A82B547B7E00527175 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE99B9A62B547B7E00527175 /* Main.storyboard */; };
 		CE99B9AB2B547B7E00527175 /* Marvel_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE99B9A92B547B7E00527175 /* Marvel_App.xcdatamodeld */; };
 		CE99B9AD2B547B7E00527175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE99B9AC2B547B7E00527175 /* Assets.xcassets */; };
 		CE99B9B02B547B7E00527175 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE99B9AE2B547B7E00527175 /* LaunchScreen.storyboard */; };
 		CE99B9BB2B547B7E00527175 /* Marvel_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99B9BA2B547B7E00527175 /* Marvel_AppTests.swift */; };
 		CE99B9C52B547B7F00527175 /* Marvel_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99B9C42B547B7F00527175 /* Marvel_AppUITests.swift */; };
 		CE99B9C72B547B7F00527175 /* Marvel_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99B9C62B547B7F00527175 /* Marvel_AppUITestsLaunchTests.swift */; };
+		CE99B9DB2B547F0000527175 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99B9D92B547F0000527175 /* SplashViewController.swift */; };
+		CE99B9DC2B547F0000527175 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE99B9DA2B547F0000527175 /* SplashViewController.xib */; };
+		CE99B9DF2B547FF800527175 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CE99B9DE2B547FF800527175 /* RxCocoa */; };
+		CE99B9E12B547FF800527175 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = CE99B9E02B547FF800527175 /* RxRelay */; };
+		CE99B9E32B547FF800527175 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE99B9E22B547FF800527175 /* RxSwift */; };
+		CE99B9E52B54804900527175 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99B9E42B54804900527175 /* SplashViewModel.swift */; };
+		CE99B9E82B54807900527175 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99B9E72B54807900527175 /* AnimationManager.swift */; };
+		CE99B9EC2B5480A200527175 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99B9EA2B5480A200527175 /* HomeViewController.swift */; };
+		CE99B9ED2B5480A200527175 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE99B9EB2B5480A200527175 /* HomeViewController.xib */; };
+		CE99BA032B5485A200527175 /* HomeMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99BA012B5485A200527175 /* HomeMainTableViewCell.swift */; };
+		CE99BA042B5485A200527175 /* HomeMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE99BA022B5485A200527175 /* HomeMainTableViewCell.xib */; };
+		CE99BA062B5486DF00527175 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99BA052B5486DF00527175 /* HomeViewModel.swift */; };
+		CE99BA092B54885A00527175 /* NetworkManagerUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99BA082B54885A00527175 /* NetworkManagerUseCases.swift */; };
+		CE99BA0D2B5488AD00527175 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99BA0C2B5488AD00527175 /* NetworkManager.swift */; };
+		CE99BA112B5489C500527175 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99BA102B5489C500527175 /* AppCoordinator.swift */; };
+		CE99BA132B548B8300527175 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99BA122B548B8300527175 /* SplashCoordinator.swift */; };
+		CE99BA152B54900B00527175 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99BA142B54900B00527175 /* HomeCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +55,6 @@
 		CE99B99D2B547B7E00527175 /* Marvel_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE99B9A02B547B7E00527175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE99B9A22B547B7E00527175 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE99B9A42B547B7E00527175 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE99B9A72B547B7E00527175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE99B9AA2B547B7E00527175 /* Marvel_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Marvel_App.xcdatamodel; sourceTree = "<group>"; };
 		CE99B9AC2B547B7E00527175 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE99B9AF2B547B7E00527175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +64,20 @@
 		CE99B9C02B547B7F00527175 /* Marvel_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Marvel_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE99B9C42B547B7F00527175 /* Marvel_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel_AppUITests.swift; sourceTree = "<group>"; };
 		CE99B9C62B547B7F00527175 /* Marvel_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE99B9D92B547F0000527175 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		CE99B9DA2B547F0000527175 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		CE99B9E42B54804900527175 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		CE99B9E72B54807900527175 /* AnimationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
+		CE99B9EA2B5480A200527175 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CE99B9EB2B5480A200527175 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		CE99BA012B5485A200527175 /* HomeMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainTableViewCell.swift; sourceTree = "<group>"; };
+		CE99BA022B5485A200527175 /* HomeMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMainTableViewCell.xib; sourceTree = "<group>"; };
+		CE99BA052B5486DF00527175 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CE99BA082B54885A00527175 /* NetworkManagerUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerUseCases.swift; sourceTree = "<group>"; };
+		CE99BA0C2B5488AD00527175 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CE99BA102B5489C500527175 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		CE99BA122B548B8300527175 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		CE99BA142B54900B00527175 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE99B9E32B547FF800527175 /* RxSwift in Frameworks */,
+				CE99B9E12B547FF800527175 /* RxRelay in Frameworks */,
+				CE99B9DF2B547FF800527175 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,14 +131,13 @@
 		CE99B99F2B547B7E00527175 /* Marvel_App */ = {
 			isa = PBXGroup;
 			children = (
-				CE99B9A02B547B7E00527175 /* AppDelegate.swift */,
-				CE99B9A22B547B7E00527175 /* SceneDelegate.swift */,
-				CE99B9A42B547B7E00527175 /* ViewController.swift */,
-				CE99B9A62B547B7E00527175 /* Main.storyboard */,
-				CE99B9AC2B547B7E00527175 /* Assets.xcassets */,
-				CE99B9AE2B547B7E00527175 /* LaunchScreen.storyboard */,
-				CE99B9B12B547B7E00527175 /* Info.plist */,
-				CE99B9A92B547B7E00527175 /* Marvel_App.xcdatamodeld */,
+				CE99BA0E2B5489AE00527175 /* Coordinators */,
+				CE99B9F02B54827200527175 /* Core */,
+				CE99B9EF2B54826000527175 /* Utilities */,
+				CE99B9EE2B54825A00527175 /* Resources */,
+				CE99B9E62B54806900527175 /* Manager */,
+				CE99B9F22B54831B00527175 /* Modules */,
+				CE99B9F12B54829900527175 /* CoreData */,
 			);
 			path = Marvel_App;
 			sourceTree = "<group>";
@@ -130,6 +159,171 @@
 			path = Marvel_AppUITests;
 			sourceTree = "<group>";
 		};
+		CE99B9E62B54806900527175 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CE99BA0A2B54889600527175 /* AnimationManager */,
+				CE99BA072B54884400527175 /* NetworkManager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CE99B9EE2B54825A00527175 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE99B9B12B547B7E00527175 /* Info.plist */,
+				CE99B9AC2B547B7E00527175 /* Assets.xcassets */,
+				CE99B9AE2B547B7E00527175 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE99B9EF2B54826000527175 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CE99B9F02B54827200527175 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CE99B9A02B547B7E00527175 /* AppDelegate.swift */,
+				CE99B9A22B547B7E00527175 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CE99B9F12B54829900527175 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CE99B9A92B547B7E00527175 /* Marvel_App.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CE99B9F22B54831B00527175 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CE99B9F82B54836700527175 /* HomeModule */,
+				CE99B9F32B54832A00527175 /* SplashModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CE99B9F32B54832A00527175 /* SplashModule */ = {
+			isa = PBXGroup;
+			children = (
+				CE99B9F62B54834300527175 /* ViewController */,
+				CE99B9F42B54833600527175 /* ViewModel */,
+			);
+			path = SplashModule;
+			sourceTree = "<group>";
+		};
+		CE99B9F42B54833600527175 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE99B9E42B54804900527175 /* SplashViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE99B9F62B54834300527175 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE99B9D92B547F0000527175 /* SplashViewController.swift */,
+				CE99B9DA2B547F0000527175 /* SplashViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE99B9F82B54836700527175 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				CE99B9FC2B54839700527175 /* ViewModel */,
+				CE99B9FB2B54839200527175 /* Model */,
+				CE99B9FA2B54838E00527175 /* View */,
+				CE99B9F92B54837200527175 /* ViewController */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		CE99B9F92B54837200527175 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE99B9EA2B5480A200527175 /* HomeViewController.swift */,
+				CE99B9EB2B5480A200527175 /* HomeViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE99B9FA2B54838E00527175 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE99BA002B54858800527175 /* TableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE99B9FB2B54839200527175 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE99B9FC2B54839700527175 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE99BA052B5486DF00527175 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE99BA002B54858800527175 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE99BA012B5485A200527175 /* HomeMainTableViewCell.swift */,
+				CE99BA022B5485A200527175 /* HomeMainTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		CE99BA072B54884400527175 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE99BA0B2B5488A000527175 /* UseCase */,
+				CE99BA0C2B5488AD00527175 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		CE99BA0A2B54889600527175 /* AnimationManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE99B9E72B54807900527175 /* AnimationManager.swift */,
+			);
+			path = AnimationManager;
+			sourceTree = "<group>";
+		};
+		CE99BA0B2B5488A000527175 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				CE99BA082B54885A00527175 /* NetworkManagerUseCases.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		CE99BA0E2B5489AE00527175 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				CE99BA102B5489C500527175 /* AppCoordinator.swift */,
+				CE99BA122B548B8300527175 /* SplashCoordinator.swift */,
+				CE99BA142B54900B00527175 /* HomeCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +340,11 @@
 			dependencies = (
 			);
 			name = Marvel_App;
+			packageProductDependencies = (
+				CE99B9DE2B547FF800527175 /* RxCocoa */,
+				CE99B9E02B547FF800527175 /* RxRelay */,
+				CE99B9E22B547FF800527175 /* RxSwift */,
+			);
 			productName = Marvel_App;
 			productReference = CE99B99D2B547B7E00527175 /* Marvel_App.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +417,9 @@
 				Base,
 			);
 			mainGroup = CE99B9942B547B7E00527175;
+			packageReferences = (
+				CE99B9DD2B547FF800527175 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = CE99B99E2B547B7E00527175 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,8 +437,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE99B9B02B547B7E00527175 /* LaunchScreen.storyboard in Resources */,
+				CE99B9DC2B547F0000527175 /* SplashViewController.xib in Resources */,
 				CE99B9AD2B547B7E00527175 /* Assets.xcassets in Resources */,
-				CE99B9A82B547B7E00527175 /* Main.storyboard in Resources */,
+				CE99B9ED2B5480A200527175 /* HomeViewController.xib in Resources */,
+				CE99BA042B5485A200527175 /* HomeMainTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +465,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE99B9A52B547B7E00527175 /* ViewController.swift in Sources */,
 				CE99B9A12B547B7E00527175 /* AppDelegate.swift in Sources */,
+				CE99BA132B548B8300527175 /* SplashCoordinator.swift in Sources */,
+				CE99BA062B5486DF00527175 /* HomeViewModel.swift in Sources */,
 				CE99B9AB2B547B7E00527175 /* Marvel_App.xcdatamodeld in Sources */,
+				CE99BA032B5485A200527175 /* HomeMainTableViewCell.swift in Sources */,
+				CE99BA152B54900B00527175 /* HomeCoordinator.swift in Sources */,
+				CE99BA0D2B5488AD00527175 /* NetworkManager.swift in Sources */,
+				CE99B9EC2B5480A200527175 /* HomeViewController.swift in Sources */,
+				CE99B9E52B54804900527175 /* SplashViewModel.swift in Sources */,
+				CE99B9E82B54807900527175 /* AnimationManager.swift in Sources */,
+				CE99BA112B5489C500527175 /* AppCoordinator.swift in Sources */,
 				CE99B9A32B547B7E00527175 /* SceneDelegate.swift in Sources */,
+				CE99BA092B54885A00527175 /* NetworkManagerUseCases.swift in Sources */,
+				CE99B9DB2B547F0000527175 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +515,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CE99B9A62B547B7E00527175 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE99B9A72B547B7E00527175 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE99B9AE2B547B7E00527175 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,12 +649,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M8S29G9Z3W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Marvel_App/Info.plist;
+				INFOPLIST_FILE = Marvel_App/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,12 +677,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M8S29G9Z3W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Marvel_App/Info.plist;
+				INFOPLIST_FILE = Marvel_App/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -606,6 +812,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE99B9DD2B547FF800527175 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE99B9DE2B547FF800527175 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE99B9DD2B547FF800527175 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		CE99B9E02B547FF800527175 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE99B9DD2B547FF800527175 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		CE99B9E22B547FF800527175 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE99B9DD2B547FF800527175 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CE99B9A92B547B7E00527175 /* Marvel_App.xcdatamodeld */ = {
